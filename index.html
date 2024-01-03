@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="body">
+    <script src="index.js"></script>
     <div class="container">
       <div class="calculator">
         <form action="">
-          <div class="display">
-            <input type="text" name="display" />
+          <div class="cont">
+            <input type="text" name="display" id="display" class="display"/>
           </div>
           <div>
-            <input type="button" value="AC"  onclick="display.value = ''" class="change"/>
+            <input type="button" value="AC"  onclick="clearDisplay()" class="change"/>
             <input type="button" value="DE"  onclick="display.value =display.value.toString().slice(0,-1)" class="change"/>
             <input type="button" value="."  onclick="display.value += '.'" class="operation"/>
             <input type="button" value="/"  onclick="display.value += '/'" class="operation"/>
